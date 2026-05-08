@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wifi-monitor-toolkit"
+version = "0.1.0"
+description = "Legal lab WiFi monitoring toolkit for AP, deauth, handshake, and rogue AP detection."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["scapy>=2.5.0"]
+
+[project.scripts]
+wifi-monitor-toolkit = "wifi_monitor_toolkit.cli:main"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,8 @@
+[
+  {
+    "ssid": "LabNet",
+    "bssid": "aa:bb:cc:dd:ee:ff",
+    "channel": 6,
+    "crypto": ["WPA2"]
+  }
+]
